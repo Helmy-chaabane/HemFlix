@@ -1,0 +1,121 @@
+.login__bg {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url(../../Images/loginBg.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.login__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 42rem;
+  background-color: #fff;
+  box-shadow: 0px 1.5px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  animation: fadeUp 1s;
+}
+
+.login__bib {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__bib span {
+  width: 100%;
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgb(88, 85, 85);
+}
+
+.login__title {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.login__icon {
+  width: 4.5rem;
+  margin-right: 1rem;
+  fill: grey;
+}
+
+.login_content {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.login__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.login__input {
+  border: none;
+  outline: none;
+  padding: 1rem 0rem;
+  width: 100%;
+  color: rgb(88, 85, 85);
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 2rem;
+}
+
+.login__input:invalid {
+  border-bottom: 1px solid red;
+}
+
+.login__submit:link,
+.login__submit:visited {
+  text-decoration: none;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  background-color: #005da6;
+  text-align: center;
+  padding: 1rem;
+  width: 10rem;
+  text-transform: uppercase;
+  color: #fff;
+  align-self: flex-end;
+}
+
+.login__signup:visited,
+.login__signup:link {
+  text-decoration: none;
+  margin-top: 3rem;
+  align-self: flex-end;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #005da6;
+  text-transform: uppercase;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    top: 60%;
+  }
+
+  100% {
+    opacity: 1;
+    top: 50%;
+  }
+}
