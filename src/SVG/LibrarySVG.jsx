@@ -5,7 +5,7 @@ const LibrarySVG = ({ classname }) => {
     <svg
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
-      className={classname ? classname : "login__icon"}
+      className={classname}
       viewBox="0 0 36 32"
     >
       <title>books</title>

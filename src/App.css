@@ -1,4 +1,9 @@
 .App {
-  width: 100vw;
+  width: 100vw imp !important;
   height: 100vh;
+  position: relative;
+}
+
+.main {
+  width: 100%;
 }

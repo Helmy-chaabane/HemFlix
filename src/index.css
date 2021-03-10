@@ -6,11 +6,34 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: Circular, "Circular Std", system-ui, BlinkMacSystemFont,
+    -apple-system, Avenir, "Helvetica Neue", "Segoe UI", sans-serif;
   box-sizing: border-box;
   line-height: 1.6;
 }
 
 html {
   font-size: 62.5%;
+}
+
+::-webkit-scrollbar {
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
 }

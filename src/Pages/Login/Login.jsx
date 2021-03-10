@@ -11,7 +11,8 @@ const Login = () => {
     setUser({ ...user, [name]: value });
   };
 
-  const onSubmit = () => {
+  const onSubmit = (e) => {
+    e.preventDefault();
     console.log("hey");
 
     alert("hey");
@@ -21,11 +22,11 @@ const Login = () => {
     <div className="login__bg">
       <section className="login__container">
         <div className="login__bib">
-          <LibrarySVG /> <span>libriria</span>
+          <LibrarySVG classname="login__icon" /> <span>libriria</span>
         </div>
         <div className="login_content">
           <div className="login__title">Sign in</div>
-          <form className="login__info" onSubmit={onSubmit()}>
+          <form className="login__info" onSubmit={(e) => onSubmit(e)}>
             <InputLogin
               placeholder="Username"
               type="text"
@@ -40,7 +41,7 @@ const Login = () => {
               value={user.password}
               changeInput={changeInput}
             />
-            <Link to="/" className="login__submit" onClick={() => onSubmit()}>
+            <Link to="/" className="login__submit" onClick={(e) => onSubmit(e)}>
               Sign in
             </Link>
           </form>

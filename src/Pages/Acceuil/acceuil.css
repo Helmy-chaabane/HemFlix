@@ -1,0 +1,50 @@
+.acceuil__header {
+  width: 100%;
+  height: 90vh;
+  background-color: hsl(216, 15%, 21%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
+  padding: 19rem 10rem 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.acceuil__title {
+  flex: 0 0 45%;
+}
+
+.acceuil__title h1 {
+  font-size: 3.6rem;
+  color: #fff;
+}
+
+.acceuil__title--para {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  color: antiquewhite;
+  font-weight: 600;
+}
+
+.acceuil__photo {
+  flex: 0 0 50%;
+  position: relative;
+}
+
+.acceuil__photo-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.acceuil__section {
+  padding: 5rem;
+}
+
+.books_title {
+  color: blueviolet;
+  text-transform: uppercase;
+  text-shadow: 0.1px 2px rgba(0, 0, 0, 0.4);
+  transform: skewX(-5deg);
+  font-size: 4rem;
+  border-bottom: 1px solid blueviolet;
+}

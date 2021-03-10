@@ -1,0 +1,21 @@
+.books__container {
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.book {
+  flex: 0 0 29%;
+  height: 45rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  display: flex;
+  backface-visibility: hidden;
+  transition: all 0.2s;
+}
+
+.book:hover {
+  transform: scale(1.15);
+}

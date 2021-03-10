@@ -1,0 +1,88 @@
+.nav {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 1px solid hsl(216, 15%, 21%);
+}
+
+.nav__icon {
+  width: 4em;
+  margin-right: 1rem;
+  fill: currentColor;
+}
+
+.nav__logo:link,
+.nav__logo:visited {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 2.5rem 3rem 2rem 5rem;
+  color: currentColor;
+}
+
+.nav__logo h6 {
+  font-size: 3rem;
+  color: currentColor;
+  text-transform: uppercase;
+}
+
+.nav__items-1 {
+  margin-right: auto;
+}
+
+.nav__items {
+  justify-self: self-end;
+  list-style: none;
+  display: flex;
+  padding: 2.5rem;
+}
+
+.nav__item {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 4rem;
+  color: currentColor;
+}
+
+.nav__logout {
+  width: 3rem;
+  fill: currentColor;
+  margin-right: 1rem;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: currentColor;
+  position: relative;
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transition: transform 200ms ease-in-out;
+}
+
+.nav__link:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-scrolled {
+  background-color: white;
+  color: grey;
+}
