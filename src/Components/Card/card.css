@@ -1,0 +1,47 @@
+.book {
+  flex: 0 0 29%;
+  height: 45rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  display: flex;
+  backface-visibility: hidden;
+  transition: all 0.2s;
+}
+
+.book:hover {
+  transform: scale(1.15);
+}
+
+.rate {
+  flex: 0 0 32%;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.rate:hover {
+  transform: scale(1.1);
+}
+
+.rate__para {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.user__des {
+  margin: 1rem 0rem 3rem 0rem;
+  display: flex;
+  align-items: center;
+}
+
+.user__photo {
+  width: 5rem;
+  margin-right: 2rem;
+}
+
+.user__des h3 {
+  font-size: 2rem;
+  color: gray;
+}

@@ -20,8 +20,8 @@ const Acceuil = () => {
         </div>
       </section>
       <section className="acceuil__section">
-        <h1 className="books_title">Most Popular Books</h1>
-        <div className="books__container">
+        <h1 className="section_title">Most Popular Books</h1>
+        <div className="cards__container">
           <Book />
           <Book />
           <Book />
@@ -30,12 +30,22 @@ const Acceuil = () => {
       </section>
 
       <section className="acceuil__section">
-        <h1 className="books_title">Peaple's rating about us</h1>
-        <div className="rates__container">
+        <h1 className="section_title">Peaple's rating about us</h1>
+        <div className="cards__container">
           <Rate />
           <Rate />
           <Rate />
-          <Rate />
+        </div>
+      </section>
+
+      <section className="acceuil__footer">
+        <div className="footer__content">
+          <h2>Start growing your knowlgde with us</h2>
+          <p>
+            Try <span className="section_title"> Libraria </span> for free today
+            and explore all the books you need and scale your online business
+            from one simple place.
+          </p>
         </div>
       </section>
     </div>
