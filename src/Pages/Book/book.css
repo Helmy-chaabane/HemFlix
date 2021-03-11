@@ -1,0 +1,100 @@
+.book__intro {
+  width: 100%;
+  height: 30vh;
+  background-color: hsl(216, 15%, 21%);
+  padding: 13rem 10rem 0rem;
+  color: white;
+}
+
+.book__intro h1 {
+  font-size: 4rem;
+}
+
+.book__description {
+  padding: 7rem 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.book__image--1 {
+  backface-visibility: hidden;
+}
+.popup__infinite {
+  animation: infinitePop 2s ease-in-out infinite;
+}
+
+@keyframes infinitePop {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.book__details {
+  flex: 0 0 65%;
+  padding: 3rem;
+}
+
+.book__details h1 {
+  font-size: 3rem;
+  color: blueviolet;
+  text-transform: uppercase;
+  transition: transform 0.2s;
+  border-bottom: 1px solid blueviolet;
+  letter-spacing: 1px;
+}
+.book__details h1:hover {
+  transform: scale(1.1);
+}
+
+.book__details--section {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.book__info {
+  font-size: 2rem;
+  font-weight: 500;
+  color: gray;
+}
+
+.book__details--section span {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-right: 2rem;
+  flex: 0 0 40%;
+}
+
+.book__details--description {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.book__btn:link,
+.book__btn:visited {
+  text-decoration: none;
+  margin-top: 5rem;
+  float: right;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: #005da6;
+  text-align: center;
+  padding: 1rem;
+  width: 15rem;
+  text-transform: uppercase;
+  color: #fff;
+  backface-visibility: hidden;
+  transition: all 0.1s ease-in-out;
+}
+
+.book__btn:hover {
+  transform: scale(1.2);
+}

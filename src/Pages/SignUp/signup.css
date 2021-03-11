@@ -1,0 +1,82 @@
+.signup__bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(216, 15%, 21%);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.signup__container {
+  flex: 0 0 70%;
+  height: 80vh;
+  background-color: #fff;
+  display: flex;
+  animation: fadeUp 1s;
+}
+
+.signup__image {
+  flex: 1;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../../Images/signup.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  align-self: stretch;
+  position: relative;
+}
+
+.signup__content {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 1rem;
+}
+
+.signup__header {
+  align-self: center;
+}
+
+.signup__form {
+  flex: 1;
+
+  padding: 1rem;
+}
+
+.signup__formgroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signup__margin {
+  width: 95%;
+  margin-right: 1rem;
+}
+
+.signup__submit {
+  float: right;
+}
+
+.signup__intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 85%;
+  transform: translate(-50%, -50%);
+}
+
+.signup__intro h1 {
+  opacity: 0;
+  color: white;
+  font-size: 5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  animation: fadeUp 0.9s ease-out 0.5s normal forwards;
+}

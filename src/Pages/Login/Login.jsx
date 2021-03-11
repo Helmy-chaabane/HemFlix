@@ -11,12 +11,7 @@ const Login = () => {
     setUser({ ...user, [name]: value });
   };
 
-  const onSubmit = (e) => {
-    e.preventDefault();
-    console.log("hey");
-
-    alert("hey");
-  };
+  const onSubmit = (e) => {};
 
   return (
     <div className="login__bg">
@@ -46,7 +41,7 @@ const Login = () => {
             </Link>
           </form>
         </div>
-        <Link to="/" className="login__signup">
+        <Link to="/signup" className="login__signup">
           Sign Up &rarr;
         </Link>
       </section>

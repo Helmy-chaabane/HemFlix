@@ -21,25 +21,21 @@ const Navbar = () => {
 
       <ul className="nav__items nav__items-1">
         <li className="nav__item">
-          {" "}
           <Link to="/" className="nav__link">
             Sell
           </Link>
         </li>
         <li className="nav__item">
-          {" "}
           <Link to="/" className="nav__link">
             Buy
           </Link>
         </li>
         <li className="nav__item">
-          {" "}
           <Link to="/" className="nav__link">
             Market
           </Link>
         </li>
         <li className="nav__item">
-          {" "}
           <Link to="/" className="nav__link">
             About
           </Link>
@@ -48,7 +44,7 @@ const Navbar = () => {
 
       <ul className="nav__items">
         <li className="nav__item">
-          <Link to="/" className="nav__link">
+          <Link to="/login" className="nav__link">
             <LogoutSVG classname="nav__logout" /> Logout
           </Link>
         </li>

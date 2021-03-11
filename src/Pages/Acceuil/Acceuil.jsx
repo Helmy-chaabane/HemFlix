@@ -8,14 +8,14 @@ const Acceuil = () => {
   return (
     <div className="acceuil">
       <section className="acceuil__header">
-        <div className="acceuil__title">
+        <div className="acceuil__title fade-left">
           <h1>Grow your knowlgde online together . </h1>
           <p className="acceuil__title--para">
             Buy digital products, physical products and services all from one
             simple platform.
           </p>
         </div>
-        <div className="acceuil__photo">
+        <div className="acceuil__photo fade-right">
           <img src={photo} alt="photos" className="acceuil__photo-1" />
         </div>
       </section>

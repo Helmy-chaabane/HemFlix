@@ -78,3 +78,35 @@
   font-size: 2rem;
   font-weight: 600;
 }
+
+.fade-right {
+  animation: fadeRight 0.8s ease-in-out;
+}
+
+.fade-left {
+  animation: fadeLeft 0.8s ease-in-out;
+}
+
+@keyframes fadeLeft {
+  0% {
+    transform: translateX(-2rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeRight {
+  0% {
+    transform: translateX(2rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
