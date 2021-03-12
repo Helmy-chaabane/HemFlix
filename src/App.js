@@ -5,6 +5,7 @@ import Acceuil from "./Pages/Acceuil/Acceuil";
 import ConsultBook from "./Pages/Book/ConsultBook";
 import "./App.css";
 import SignUp from "./Pages/SignUp/SignUp";
+import Order from "./Pages/Order/Order";
 
 function App() {
   return (
@@ -22,6 +23,13 @@ function App() {
           exact
           render={(props) => {
             return <Main component={Acceuil} {...props} />;
+          }}
+        />
+        <Route
+          path="/myOrders"
+          exact
+          render={(props) => {
+            return <Main component={Order} {...props} />;
           }}
         />
         <Route path="/login" exact component={Login} />

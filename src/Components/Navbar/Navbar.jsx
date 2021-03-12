@@ -21,8 +21,8 @@ const Navbar = () => {
 
       <ul className="nav__items nav__items-1">
         <li className="nav__item">
-          <Link to="/" className="nav__link">
-            Sell
+          <Link to="/myOrders" className="nav__link">
+            Orders
           </Link>
         </li>
         <li className="nav__item">
