@@ -47,9 +47,9 @@
 }
 
 .order__card {
-  width: 90%;
+  width: 100%;
   padding: 2rem;
-  height: auto;
+  height: 23rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
   display: flex;
   cursor: pointer;
@@ -70,7 +70,6 @@
 .order__details {
   flex: 1;
   display: flex;
-
   flex-direction: column;
   justify-content: space-between;
 }
@@ -96,19 +95,11 @@
 }
 
 .order__bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .order__bottom h4 {
   font-size: 3rem;
   font-weight: 600;
   color: green;
-}
-
-.order__bottom h6 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: grey;
+  float: right;
 }

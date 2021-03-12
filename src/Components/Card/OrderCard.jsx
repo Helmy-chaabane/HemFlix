@@ -12,11 +12,16 @@ const OderCard = () => {
           <h2>Book Title is here</h2>
         </div>
         <div className="order__content">
-          <p className="order__content--para">Description about the Book</p>
+          <p className="order__content--para">Number of Copies : 1</p>
+
+          <p className="order__content--para">Date of Order : 20/05/21</p>
+          <p className="order__content--para">
+            Address : 7ay tadhamon 9odem lmarkez win lmarch, 2001
+          </p>
         </div>
+
         <div className="order__bottom">
           <h4>250 $</h4>
-          <h6>20/05/21</h6>
         </div>
       </div>
     </div>

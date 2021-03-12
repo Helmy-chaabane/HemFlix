@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import LibrarySVG from "../../SVG/LibrarySVG";
 import LogoutSVG from "../../SVG/LogoutSVG";
+import SearchSVG from "../../SVG/SearchSVG";
 import "./nav.css";
 
 const Navbar = () => {
@@ -44,7 +45,11 @@ const Navbar = () => {
 
       <div className="nav__search">
         <SearchSVG className="nav__search--icon" />
-        <input type="text" className="nav__input" placeholder="Search..." />
+        <input
+          type="text"
+          className="nav__input"
+          placeholder="Looking for a Book ?"
+        />
       </div>
 
       <ul className="nav__items">

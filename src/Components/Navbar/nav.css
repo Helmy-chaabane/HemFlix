@@ -34,7 +34,6 @@
 }
 
 .nav__items-1 {
-  margin-right: auto;
 }
 
 .nav__items {
@@ -89,9 +88,11 @@
 
 .nav__search {
   flex: 1;
-  border-bottom: 1px solid currentColor;
+  border-radius: 100px;
+  border: 1px solid currentColor;
   display: flex;
   align-items: center;
+  padding: 1rem 2rem;
 }
 
 .nav__input {
@@ -99,9 +100,13 @@
   border: none;
   background-color: transparent;
   color: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 .nav__input::placeholder {
+  font-size: inherit;
+  font-weight: 500;
   color: inherit;
 }
 

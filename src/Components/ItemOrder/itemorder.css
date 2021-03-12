@@ -1,0 +1,45 @@
+.order__item {
+  cursor: pointer;
+  width: 15%;
+  margin: 10px;
+  position: relative;
+}
+
+.order__item:hover::before {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0)
+  );
+}
+
+.order__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition: all 0.5s;
+}
+
+.order__item:hover .order__item--name {
+  opacity: 1;
+  top: 50%;
+}
+
+.order__item--name {
+  opacity: 0;
+  text-align: center;
+  position: absolute;
+  width: 70%;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  transition: all 0.5s;
+}
+.order__item--photo {
+  width: 100%;
+  height: 100%;
+}
