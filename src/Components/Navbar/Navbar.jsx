@@ -42,6 +42,11 @@ const Navbar = () => {
         </li>
       </ul>
 
+      <div className="nav__search">
+        <SearchSVG className="nav__search--icon" />
+        <input type="text" className="nav__input" placeholder="Search..." />
+      </div>
+
       <ul className="nav__items">
         <li className="nav__item">
           <Link to="/login" className="nav__link">

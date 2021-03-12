@@ -86,3 +86,31 @@
   background-color: white;
   color: grey;
 }
+
+.nav__search {
+  flex: 1;
+  border-bottom: 1px solid currentColor;
+  display: flex;
+  align-items: center;
+}
+
+.nav__input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+.nav__input::placeholder {
+  color: inherit;
+}
+
+.nav__input:focus {
+  outline: none;
+}
+
+.nav__search--icon {
+  width: 2rem;
+  fill: currentColor;
+  margin-right: 1rem;
+}
