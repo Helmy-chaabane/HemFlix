@@ -1,13 +1,12 @@
 import React from "react";
 import { useHistory } from "react-router";
-import cover from "../../Images/cover.jpg";
 
-const MovieCard = () => {
+const MovieCard = ({ id, title, image }) => {
   const history = useHistory();
   return (
-    <div className="movie__card" onClick={() => history.push("/movie")}>
-      <img src={cover} alt="card_img" className="movie__card--img" />
-      <h6>Collateral</h6>
+    <div className="movie__card" onClick={() => history.push(`/movie/${id}`)}>
+      <img src={image} alt="card_img" className="movie__card--img" />
+      <h6>{title}</h6>
     </div>
   );
 };

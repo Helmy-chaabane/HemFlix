@@ -65,7 +65,7 @@
       list-style: none;
       display: flex;
       flex-direction: column;
-      height: 30rem;
+
       justify-content: space-between;
       border-radius: 2px;
 
@@ -80,6 +80,10 @@
         border-bottom: 1px solid #ffffffff;
         transition: all 0.3s;
         position: relative;
+
+        &::first-letter {
+          text-transform: uppercase;
+        }
 
         &::after {
           content: "";
@@ -123,6 +127,7 @@
     }
     &--lists {
       flex: 1;
+      margin-bottom: 15rem;
     }
   }
 }

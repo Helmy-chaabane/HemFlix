@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Switch>
         <Route
-          path="/movie"
+          path="/movie/:id"
           exact
           render={(props) => {
             return <Main component={Movie} {...props} />;
