@@ -1,0 +1,41 @@
+.movies__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie__card {
+  flex: 0 0 22%;
+  backface-visibility: hidden;
+  margin: 0rem 3rem 1rem 0rem;
+  box-shadow: 0 1.5rem 4rem rgba(white, 0.05);
+  transition: transform 0.4s;
+  animation: fadeUp 0.5s normal;
+
+  h6 {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.4rem;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+  cursor: pointer;
+
+  &--img {
+    width: 100%;
+    height: 30rem;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}

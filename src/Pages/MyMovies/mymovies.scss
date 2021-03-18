@@ -1,0 +1,28 @@
+.mymovies {
+  background-color: #181818;
+  height: auto;
+  &__intro {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    h1 {
+      flex: 0 0 60%;
+      color: white;
+      font-size: 5rem;
+      text-align: center;
+    }
+  }
+
+  &__display {
+    padding: 3rem 10rem;
+    h5 {
+      color: white;
+      font-size: 3rem;
+      text-transform: uppercase;
+      border-bottom: 1px solid #ffffff;
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.actors {
+  background-color: #181818;
+  height: auto;
+
+  &__intro {
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 10rem;
+
+    h1 {
+      flex: 0 0 50%;
+      color: white;
+      font-size: 5rem;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    padding: 1rem 6rem;
+  }
+}
+
+.actor {
+  height: 33rem;
+  box-shadow: 0 1.5rem 4rem rgba(white, 0.05);
+  background-color: #333;
+  display: flex;
+  &:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+
+  &__img {
+    flex: 0 0 33%;
+  }
+
+  &__container {
+    flex: 1;
+    padding: 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__name {
+    color: white;
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  &__description {
+    font-size: 2rem;
+    color: white;
+  }
+
+  &__movies {
+    h6 {
+      color: white;
+      font-size: 3rem;
+    }
+    &--list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &--item {
+      margin-right: 3rem;
+    }
+
+    &--link:link,
+    &--link:visited {
+      text-decoration: none;
+      color: white;
+      font-size: 2.4rem;
+      cursor: pointer;
+      position: relative;
+      font-weight: 600;
+      transition: color 0.1s ease;
+    }
+
+    &--link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 2px;
+      background-color: #e50914;
+      transform: scaleX(0);
+      transition: all 0.5s;
+    }
+
+    &--link:hover::after {
+      transform: scaleX(1);
+    }
+    &--link:hover {
+      color: #e50914;
+    }
+  }
+}

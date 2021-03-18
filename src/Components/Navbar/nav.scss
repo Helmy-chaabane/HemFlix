@@ -1,0 +1,81 @@
+.nav {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  justify-content: space-between;
+
+  &__logo:link,
+  &__logo:visited {
+    text-decoration: none;
+    padding: 1rem 3rem 1rem 5rem;
+    color: currentColor;
+  }
+
+  &__logo h6 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #e50914;
+    transform: skewX(-5deg);
+    text-transform: uppercase;
+  }
+
+  &__items {
+    justify-self: self-end;
+    list-style: none;
+    display: flex;
+    padding: 2.5rem;
+  }
+
+  &__item {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-right: 5rem;
+    color: currentColor;
+  }
+
+  &__logout {
+    width: 2.5rem;
+    fill: currentColor;
+    margin-right: 1rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: currentColor;
+    position: relative;
+    &:hover::after {
+      transform: scaleX(1);
+    }
+  }
+
+  &__link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transition: transform 200ms ease-in-out;
+  }
+
+  &-scrolled {
+    background-color: rgba($color: #000000, $alpha: 0.95);
+    color: white;
+  }
+
+  &__items-1 {
+    flex: 0 50%;
+  }
+}

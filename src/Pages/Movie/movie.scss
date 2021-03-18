@@ -1,0 +1,68 @@
+.movie {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  &__img {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+  }
+
+  &__container {
+    align-self: flex-end;
+    height: 85%;
+    flex: 0 0 55%;
+    padding: 3rem;
+
+    &--title {
+      padding: 0rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h1 {
+        color: white;
+        font-size: 3rem;
+        border-bottom: 1px solid white;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+    }
+
+    &--icon {
+      fill: rgba($color: #ffffff, $alpha: 0.5);
+      //fill: rgb(216, 13, 13);
+      width: 5rem;
+      cursor: pointer;
+      transition: all 0.4s;
+    }
+
+    &--genre {
+      padding: 3rem 1rem;
+      margin-bottom: 3rem;
+      h2 {
+        color: rgb(231, 229, 229);
+        text-transform: uppercase;
+        font-size: 2rem;
+      }
+    }
+
+    &--description {
+      color: white;
+      h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      p::first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

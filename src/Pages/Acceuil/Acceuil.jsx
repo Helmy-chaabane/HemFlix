@@ -1,51 +1,89 @@
-import React from "react";
-import Book from "../../Components/Card/Book";
-import Rate from "../../Components/Card/Rate";
-import photo from "../../Images/acceuilphoto.JPG";
-import "./acceuil.css";
+import React, { useState } from "react";
+import Movies from "../../Components/Movies/Movies";
+import "./acceuil.scss";
 
 const Acceuil = () => {
+  const [selectedCat, setSelectedCat] = useState("horror");
+
+  const changeCat = (cat) => {
+    setSelectedCat(cat);
+  };
+
   return (
     <div className="acceuil">
       <section className="acceuil__header">
-        <div className="acceuil__title fade-left">
-          <h1>Grow your knowlgde online together . </h1>
-          <p className="acceuil__title--para">
-            Buy digital products, physical products and services all from one
-            simple platform.
-          </p>
-        </div>
-        <div className="acceuil__photo fade-right">
-          <img src={photo} alt="photos" className="acceuil__photo-1" />
-        </div>
-      </section>
-      <section className="acceuil__section">
-        <h1 className="section_title">Most Popular Books</h1>
-        <div className="cards__container">
-          <Book />
-          <Book />
-          <Book />
-          <Book />
+        <div className="acceuil__header--container">
+          <h1>Unlimited movies, TV shows, and more</h1>
+          <h6>Watch anywhere. Cancel anytime.</h6>
         </div>
       </section>
 
-      <section className="acceuil__section">
-        <h1 className="section_title">Peaple's rating about us</h1>
-        <div className="cards__container">
-          <Rate />
-          <Rate />
-          <Rate />
+      <section className="acceuil__movies">
+        <div className="acceuil__movies--intro">
+          <h2>Here's our finest Movies</h2>
         </div>
-      </section>
-
-      <section className="acceuil__footer">
-        <div className="footer__content">
-          <h2>Start growing your knowlgde with us</h2>
-          <p>
-            Try <span className="section_title"> Libraria </span> for free today
-            and explore all the books you need and scale your online business
-            from one simple place.
-          </p>
+        <div className="acceuil__movies--container">
+          <div className="acceuil__movies--categories">
+            <ul className="acceuil__movies--items">
+              <li
+                className={`acceuil__movies--items--item ${
+                  selectedCat === "horror" &&
+                  "acceuil__movies--items--item--active"
+                }`}
+                onClick={() => changeCat("horror")}
+              >
+                Horror
+              </li>
+              <li
+                className={`acceuil__movies--items--item ${
+                  selectedCat === "comedy" &&
+                  "acceuil__movies--items--item--active"
+                }`}
+                onClick={() => changeCat("comedy")}
+              >
+                Comedy
+              </li>
+              <li
+                className={`acceuil__movies--items--item ${
+                  selectedCat === "animation" &&
+                  "acceuil__movies--items--item--active"
+                }`}
+                onClick={() => changeCat("animation")}
+              >
+                Animation
+              </li>
+              <li
+                className={`acceuil__movies--items--item ${
+                  selectedCat === "fantasy" &&
+                  "acceuil__movies--items--item--active"
+                }`}
+                onClick={() => changeCat("fantasy")}
+              >
+                Fantasy
+              </li>
+              <li
+                className={`acceuil__movies--items--item ${
+                  selectedCat === "romantic" &&
+                  "acceuil__movies--items--item--active"
+                }`}
+                onClick={() => changeCat("romantic")}
+              >
+                Romantic
+              </li>
+              <li
+                className={`acceuil__movies--items--item ${
+                  selectedCat === "action" &&
+                  "acceuil__movies--items--item--active"
+                }`}
+                onClick={() => changeCat("action")}
+              >
+                Action
+              </li>
+            </ul>
+          </div>
+          <div className="acceuil__movies--lists">
+            <Movies />
+          </div>
         </div>
       </section>
     </div>

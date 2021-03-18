@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import LibrarySVG from "../../SVG/LibrarySVG";
 import LogoutSVG from "../../SVG/LogoutSVG";
-import SearchSVG from "../../SVG/SearchSVG";
-import "./nav.css";
+import "./nav.scss";
 
 const Navbar = () => {
   const [navbarC, setNavBar] = useState(false);
@@ -17,40 +15,21 @@ const Navbar = () => {
   return (
     <nav className={`nav  ${navbarC && "nav-scrolled "}`}>
       <Link to="/" className="nav__logo">
-        <LibrarySVG classname="nav__icon" /> <h6>Libraria</h6>
+        <h6 className="nav__title">hemflix</h6>
       </Link>
 
       <ul className="nav__items nav__items-1">
         <li className="nav__item">
-          <Link to="/myOrders" className="nav__link">
-            Orders
+          <Link to="/mymovies" className="nav__link">
+            My movies
           </Link>
         </li>
         <li className="nav__item">
-          <Link to="/" className="nav__link">
-            Buy
-          </Link>
-        </li>
-        <li className="nav__item">
-          <Link to="/" className="nav__link">
-            Market
-          </Link>
-        </li>
-        <li className="nav__item">
-          <Link to="/" className="nav__link">
-            About
+          <Link to="/actors" className="nav__link">
+            Actors
           </Link>
         </li>
       </ul>
-
-      <div className="nav__search">
-        <SearchSVG className="nav__search--icon" />
-        <input
-          type="text"
-          className="nav__input"
-          placeholder="Looking for a Book ?"
-        />
-      </div>
 
       <ul className="nav__items">
         <li className="nav__item">

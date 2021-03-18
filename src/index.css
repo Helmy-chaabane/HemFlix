@@ -17,23 +17,15 @@ html {
 }
 
 ::-webkit-scrollbar {
-  border-radius: 50px;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.9);
-  border-radius: 50px;
+  background-color: red;
+  opacity: 0.4;
+  border-radius: 2px;
 }
 
-::-webkit-scrollbar-corner {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-::-webkit-scrollbar-button {
-  display: none;
+::selection {
+  background-color: red;
 }
