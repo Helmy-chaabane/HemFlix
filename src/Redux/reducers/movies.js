@@ -60,7 +60,7 @@ const slice = createSlice({
 
       {
         id: 3,
-        liked: false,
+        liked: true,
         genre: "horror",
         title: "bride of chukky",
         cover: chukkyCover,
