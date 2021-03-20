@@ -3,7 +3,7 @@
   min-height: 100vh;
 
   &__intro {
-    height: auto;
+    height: 30rem;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -43,7 +43,6 @@
     padding: 0rem 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 
   &__name {
