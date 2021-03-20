@@ -1,41 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import actor from "../../Images/tom_cruise.jpg";
+import Trailer from "../../Components/Trailler/Trailer";
 
-const Actor = () => {
+const Actor = ({ actor }) => {
   return (
     <section className="actor fade-left">
-      <img src={actor} alt="actor_photo" className="actor__img" />
+      <img src={actor.image} alt="actor_photo" className="actor__img" />
       <div className="actor__container">
-        <h6 className="actor__name">Tom Cruise</h6>
-        <p className="actor__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-          nostrum praesentium sint incidunt fugit, omnis veniam odit corporis
-          qui, necessitatibus suscipit delectus libero voluptates provident
-          voluptatem dolore hic soluta ab!
-        </p>
+        <h6 className="actor__name">{actor.name}</h6>
+        <p className="actor__description">{actor.description}</p>
         <div className="actor__movies">
-          <h6>Check</h6>
           <ul className="actor__movies--list">
             <li className="actor__movies--item">
-              <Link to="/movie" className="actor__movies--link">
-                Collatral
-              </Link>
-            </li>
-            <li className="actor__movies--item">
-              <Link to="/movie" className="actor__movies--link">
-                Collatral
-              </Link>
-            </li>
-            <li className="actor__movies--item">
-              <Link to="/movie" className="actor__movies--link">
-                Collatral
-              </Link>
-            </li>
-            <li className="actor__movies--item">
-              <Link to="/movie" className="actor__movies--link">
-                Collatral
-              </Link>
+              <Trailer movieId={actor.movieId} trailer={actor.trailer} />
             </li>
           </ul>
         </div>

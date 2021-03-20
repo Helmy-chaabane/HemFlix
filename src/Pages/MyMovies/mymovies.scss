@@ -1,6 +1,7 @@
 .mymovies {
   background-color: #181818;
   height: auto;
+  min-height: 100vh;
   &__intro {
     height: 50vh;
     display: flex;
@@ -23,6 +24,16 @@
       text-transform: uppercase;
       border-bottom: 1px solid #ffffff;
       margin-bottom: 1rem;
+    }
+  }
+
+  &__empty {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    h6 {
+      color: rgb(161, 9, 9);
+      font-size: 3rem;
     }
   }
 }

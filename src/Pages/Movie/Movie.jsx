@@ -20,6 +20,8 @@ const Movie = () => {
           <div className="movie__container--title">
             <h1>{movie.title}</h1>
             <Heart
+              like={movie.liked}
+              title={movie.title}
               id={movie.id}
               classname={`movie__container--icon  ${
                 movie.liked && "movie__container--icon--liked"

@@ -34,7 +34,9 @@ const MyMovies = () => {
           <MovieList movies={animations} />
         </React.Fragment>
       ) : (
-        <div> You didnt like any movie yet</div>
+        <div className="mymovies__empty">
+          <h6> You didnt like any movie yet!</h6>
+        </div>
       )}
     </div>
   );

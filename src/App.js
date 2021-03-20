@@ -4,8 +4,8 @@ import Main from "./Components/MainContent/Main";
 import Acceuil from "./Pages/Acceuil/Acceuil";
 import Movie from "./Pages/Movie/Movie";
 import MyMovies from "./Pages/MyMovies/MyMovies";
-import "./App.css";
 import Actors from "./Pages/Actors/Actors";
+import "./App.css";
 
 function App() {
   return (
@@ -18,7 +18,6 @@ function App() {
             return <Main component={Movie} {...props} />;
           }}
         />
-
         <Route
           path="/mymovies"
           exact
@@ -33,7 +32,6 @@ function App() {
             return <Main component={Acceuil} {...props} />;
           }}
         />
-
         <Route
           path="/actors"
           exact
@@ -41,7 +39,6 @@ function App() {
             return <Main component={Actors} {...props} />;
           }}
         />
-
         <Route path="/login" exact component={Login} />
       </Switch>
     </div>

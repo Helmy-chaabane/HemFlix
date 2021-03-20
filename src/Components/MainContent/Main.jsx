@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
+import NotificationContainer from "../Notification/NotificationContainer";
 
 const Main = ({ component: Component }) => {
   return (
@@ -7,6 +8,7 @@ const Main = ({ component: Component }) => {
       <Navbar />
       <main className="main">
         <Component />
+        <NotificationContainer />
       </main>
     </React.Fragment>
   );

@@ -1,9 +1,9 @@
 .actors {
   background-color: #181818;
-  height: auto;
+  min-height: 100vh;
 
   &__intro {
-    height: 35rem;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -19,11 +19,13 @@
 
   &__list {
     padding: 1rem 6rem;
+    height: 100%;
   }
 }
 
 .actor {
-  height: 33rem;
+  height: auto;
+  padding: 1rem;
   box-shadow: 0 1.5rem 4rem rgba(white, 0.05);
   background-color: #333;
   display: flex;
@@ -33,10 +35,11 @@
 
   &__img {
     flex: 0 0 33%;
+    justify-self: start;
   }
 
   &__container {
-    flex: 1;
+    width: 100%;
     padding: 0rem 1rem;
     display: flex;
     flex-direction: column;
@@ -55,48 +58,15 @@
   }
 
   &__movies {
-    h6 {
-      color: white;
-      font-size: 3rem;
-    }
     &--list {
       list-style: none;
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
     }
 
     &--item {
-      margin-right: 3rem;
-    }
-
-    &--link:link,
-    &--link:visited {
-      text-decoration: none;
-      color: white;
-      font-size: 2.4rem;
-      cursor: pointer;
-      position: relative;
-      font-weight: 600;
-      transition: color 0.1s ease;
-    }
-
-    &--link::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 2px;
-      background-color: #e50914;
-      transform: scaleX(0);
-      transition: all 0.5s;
-    }
-
-    &--link:hover::after {
-      transform: scaleX(1);
-    }
-    &--link:hover {
-      color: #e50914;
+      height: 25rem;
+      width: 100%;
     }
   }
 }

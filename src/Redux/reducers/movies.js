@@ -16,6 +16,7 @@ import zooCover from "../../Images/zoo_cover.jpg";
 import transformersCover from "../../Images/transformers_cover.jpg";
 import kungfuCover from "../../Images/kungfu_cover.jpg";
 import godfadherCover from "../../Images/godfadher_cover.jpg";
+import venomCover from "../../Images/venom_cover.jpg";
 import collateralImage from "../../Images/collateral_bigCover.jpg";
 import titanicImage from "../../Images/titanic_bigCover.jpg";
 import chukkyImage from "../../Images/chukky_bigCover.jpg";
@@ -33,6 +34,7 @@ import zooImage from "../../Images/zoo_bigCover.jpg";
 import transformersImage from "../../Images/transformers_bigCover.jpg";
 import kungfuImage from "../../Images/kungfu_bigCover.jpg";
 import godfadherImage from "../../Images/godfadher_bigCover.jpg";
+import venomImage from "../../Images/venom_bigCover.jpg";
 
 const slice = createSlice({
   name: "data",
@@ -60,7 +62,7 @@ const slice = createSlice({
 
       {
         id: 3,
-        liked: true,
+        liked: false,
         genre: "horror",
         title: "bride of chukky",
         cover: chukkyCover,
@@ -99,7 +101,7 @@ const slice = createSlice({
       },
       {
         id: 7,
-        liked: true,
+        liked: false,
         genre: "horror",
         title: "SPLIT",
         cover: splitCover,
@@ -118,7 +120,7 @@ const slice = createSlice({
       },
       {
         id: 9,
-        liked: false,
+        liked: true,
         genre: "horror",
         title: "Conjuring",
         description:
@@ -130,7 +132,7 @@ const slice = createSlice({
         id: 10,
         liked: true,
         genre: "horror",
-        title: "Don't breath",
+        title: "Dont breath",
         description:
           "Rocky, Alex, and Money are three Detroit delinquents who make a living by breaking into houses and stealing valuables. Rocky longs to move to California with her younger sister, Diddy, and escape from their abusive mother and her alcoholic boyfriend. However, to the trio's frustration, their fence keeps undervaluing the items they bring. Money receives a tip from their fence that Gulf War veteran Norman Nordstrom has $300,000 in cash in his house in an abandoned Detroit neighborhood. The cash was reportedly a settlement after a wealthy young woman, Cindy Roberts, killed his daughter in a car accident. The three spy on the house and learn that Nordstrom is blind.",
         cover: breathCover,
@@ -138,7 +140,7 @@ const slice = createSlice({
       },
       {
         id: 11,
-        liked: true,
+        liked: false,
         genre: "action",
         title: "Extraction",
         description:
@@ -149,7 +151,7 @@ const slice = createSlice({
 
       {
         id: 12,
-        liked: false,
+        liked: true,
         genre: "action",
         title: "Team A",
         description: `John "Hannibal" Smith is held captive in Mexico by two Federal Police officers working for renegade General Javier Tuco. Hannibal escapes and sets out to rescue his friend Templeton "Face" Peck, who is held captive at Tuco's ranch. Hannibal saves Face after enlisting his teammate Ranger, B.A. Baracus, driving to the rescue in BA's modified GMC Vandura. Pursued by Tuco, they stop at a nearby Army Hospital to recruit the services of their pilot Howling Mad Murdock. They flee in a medical helicopter, chased by Tuco, in a dogfight that leaves BA with a phobia of flying. The battle ends when they lure Tuco's helicopter into American airspace, where it is shot down by an F-22 Raptor for trespassing, killing Tuco and his men.`,
@@ -168,7 +170,7 @@ const slice = createSlice({
       },
       {
         id: 14,
-        liked: true,
+        liked: false,
         genre: "animation",
         title: "Zootopia",
         description: `In a world of anthropomorphic mammals, rabbit Judy Hopps from rural Bunnyburrow fulfills her childhood dream of becoming a police officer in urban Zootopia. Despite being the academy valedictorian, Judy is delegated to parking duty by Chief Bogo, who doubts her potential because she is a rabbit. On her first day, she is hustled by a con artist fox duo, Nick Wilde and Finnick. Judy abandons parking duty to arrest Duke Weaselton, a weasel who stole a bag of crocus bulbs known as Midnicampum holicithias. Bogo reprimands her, but an otter, Mrs. Otterton, enters Bogo's office pleading for someone to find her husband Emmitt, one of fourteen animals who are missing. When Judy volunteers and Assistant Mayor Dawn Bellwether praises the assignment, Bogo has no choice but to give Judy the case, stipulating she has 48 hours to find Emmitt Otterton and that she must resign if she fails.`,
@@ -201,6 +203,15 @@ const slice = createSlice({
         description: `The Corleone family patriarch is Vito Corleone (The Don), whose surname (Italian for "Lionheart") recalls the town of Corleone, Sicily. His birth name is Vittorio Andolini, but after emigrating to America, he changed it to the name of his home village as one of his few acts of sentimentality. Vito fathered four children: Santino "Sonny" Corleone, Frederico "Fredo" Corleone, Michael "Mike" Corleone, and Constanzia "Connie" Corleone. He also has an informally adopted son, Thomas "Tom" Hagen, who became the Corleone Family's consigliere (counselor). Vito Corleone is also godfather to the famous singer and movie star Johnny Fontane. The godfather referred to in the title is generally taken to be Vito. However, the story's main character is Michael Corleone. The novel's central storyline details Michael's destiny to succeed his father as the head of the family empire, despite his desire to lead an Americanized life with his girlfriend (and eventual wife) Kay Adams.`,
         cover: godfadherCover,
         bigImage: godfadherImage,
+      },
+      {
+        id: 18,
+        liked: false,
+        genre: "fantasy",
+        title: "Venom",
+        description: `The Corleone family patriarch is Vito Corleone (The Don), whose surname (Italian for "Lionheart") recalls the town of Corleone, Sicily. His birth name is Vittorio Andolini, but after emigrating to America, he changed it to the name of his home village as one of his few acts of sentimentality. Vito fathered four children: Santino "Sonny" Corleone, Frederico "Fredo" Corleone, Michael "Mike" Corleone, and Constanzia "Connie" Corleone. He also has an informally adopted son, Thomas "Tom" Hagen, who became the Corleone Family's consigliere (counselor). Vito Corleone is also godfather to the famous singer and movie star Johnny Fontane. The godfather referred to in the title is generally taken to be Vito. However, the story's main character is Michael Corleone. The novel's central storyline details Michael's destiny to succeed his father as the head of the family empire, despite his desire to lead an Americanized life with his girlfriend (and eventual wife) Kay Adams.`,
+        cover: venomCover,
+        bigImage: venomImage,
       },
     ],
     currentGenre: "horror",

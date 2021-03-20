@@ -1,19 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import LogoutSVG from "../../SVG/LogoutSVG";
+import { useDispatch, useSelector } from "react-redux";
+import { CHANGE_NAV_BACKGROUNDCOLOR } from "../../Redux/reducers/navbar";
+import { scrollingBoolean } from "../../Redux/selectors/navbar";
+import { USER_LOG } from "../../Redux/reducers/user";
+import { REMOVE_ALL_NOTIFICATIONS } from "../../Redux/reducers/notifications";
 import "./nav.scss";
 
 const Navbar = () => {
-  const [navbarC, setNavBar] = useState(false);
-
+  const scroll = useSelector(scrollingBoolean);
+  const dispatch = useDispatch();
   window.addEventListener("scroll", () => {
     if (window.scrollY >= 50) {
-      setNavBar(true);
-    } else setNavBar(false);
+      dispatch(CHANGE_NAV_BACKGROUNDCOLOR({ bool: true }));
+    } else dispatch(CHANGE_NAV_BACKGROUNDCOLOR({ bool: false }));
   });
 
   return (
-    <nav className={`nav  ${navbarC && "nav-scrolled "}`}>
+    <nav className={`nav  ${scroll && "nav-scrolled "}`}>
       <Link to="/" className="nav__logo">
         <h6 className="nav__title">hemflix</h6>
       </Link>
@@ -33,7 +38,14 @@ const Navbar = () => {
 
       <ul className="nav__items">
         <li className="nav__item">
-          <Link to="/login" className="nav__link">
+          <Link
+            to="/login"
+            className="nav__link"
+            onClick={() => {
+              dispatch(REMOVE_ALL_NOTIFICATIONS({}));
+              dispatch(USER_LOG({}));
+            }}
+          >
             <LogoutSVG classname="nav__logout" /> Logout
           </Link>
         </li>
