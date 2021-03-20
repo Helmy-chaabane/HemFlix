@@ -18,15 +18,18 @@ const Trailer = ({ movieId, trailer }) => {
         onMouseLeave={() => ref.current.pause()}
         onClick={() => history.push(`/movie/${movie.id}`)}
       />
-      <video
-        ref={ref}
-        muted={false}
-        className="trailer__video"
-        loop
-        preload="auto"
-        poster={movie.bigCover}
-        src={trailer}
-      ></video>
+      <div className="trailer__container">
+        {" "}
+        <video
+          ref={ref}
+          muted={false}
+          className="trailer__video"
+          loop
+          preload="auto"
+          poster={movie.bigCover}
+          src={trailer}
+        ></video>
+      </div>
     </div>
   );
 };

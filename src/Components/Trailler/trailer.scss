@@ -5,24 +5,24 @@
 
   &__img {
     height: 100%;
-    flex: 0 0 30%;
+    flex: 0 0 20%;
     cursor: pointer;
   }
 
   &__container {
-    flex: 1;
+    flex: 0 0 60%;
+    border: 1px solid white;
   }
 
   &__video {
-    flex: 1;
     height: 100%;
-    height: 100%;
+    width: 100%;
     outline: none;
     opacity: 0;
     transition: all 1s;
   }
 
-  &__img:hover + &__video {
+  &__img:hover + .trailer__container > .trailer__video {
     opacity: 1;
   }
 }

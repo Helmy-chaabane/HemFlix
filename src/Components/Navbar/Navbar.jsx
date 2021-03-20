@@ -26,12 +26,12 @@ const Navbar = () => {
       <ul className="nav__items nav__items-1">
         <li className="nav__item">
           <Link to="/mymovies" className="nav__link">
-            My movies
+            My Movies
           </Link>
         </li>
         <li className="nav__item">
           <Link to="/actors" className="nav__link">
-            Actors
+            Actors/Trailers
           </Link>
         </li>
       </ul>
