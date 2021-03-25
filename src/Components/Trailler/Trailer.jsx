@@ -18,7 +18,11 @@ const Trailer = ({ movieId, trailer }) => {
         onMouseLeave={() => ref.current.pause()}
         onClick={() => history.push(`/movie/${movie.id}`)}
       />
-      <div className="trailer__container">
+      <div
+        className="trailer__container"
+        onMouseEnter={() => ref.current.play()}
+        onMouseLeave={() => ref.current.pause()}
+      >
         {" "}
         <video
           ref={ref}

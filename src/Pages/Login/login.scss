@@ -20,7 +20,7 @@
 
   &__container {
     width: 35vw;
-    height: 45rem;
+    min-height: 45rem;
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
     border-radius: 2px;
@@ -130,6 +130,27 @@
   &__btn:focus,
   &__btn:active {
     outline: none;
+  }
+
+  &__signup:link,
+  &__signup:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 3rem;
+    float: right;
+    transition: transform 0.3s, color 0.5s;
+
+    &:hover {
+      color: #e50914;
+      transform: skew(-5deg);
+    }
+
+    &--arrow {
+      font-size: 2rem;
+    }
   }
 }
 

@@ -6,6 +6,7 @@ import Movie from "./Pages/Movie/Movie";
 import MyMovies from "./Pages/MyMovies/MyMovies";
 import Actors from "./Pages/Actors/Actors";
 import "./App.css";
+import Signup from "./Pages/Signup/Signup";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <ProtectedRoute path="/movie/:id" exact component={Movie} />
         <ProtectedRoute path="/actors" exact component={Actors} />
         <Route path="/login" exact component={Login} />
+        <Route path="/signup" exact component={Signup} />
       </Switch>
     </div>
   );

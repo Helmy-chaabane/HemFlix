@@ -13,7 +13,9 @@ const slice = createSlice({
   reducers: {
     SET_USER: (user, action) => {
       const { champ, value } = action.payload;
+      console.log(champ);
       user[champ] = value;
+      user[`${champ}Error`] = "";
       user.Submiting = false;
     },
 

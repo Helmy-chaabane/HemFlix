@@ -1,8 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { SET_USER } from "../../Redux/reducers/user";
 
-const InputLogin = ({ placeholder, type, name, error }) => {
+const InputLogin = ({ placeholder, type, name, error, SET }) => {
   const dispatch = useDispatch();
   return (
     <div className="login__input">
@@ -13,8 +12,7 @@ const InputLogin = ({ placeholder, type, name, error }) => {
         autoComplete="off"
         name={name}
         onChange={(e) => {
-          dispatch(SET_USER({ champ: name, value: e.currentTarget.value }));
-          dispatch(SET_USER({ champ: `${name}Error`, value: "" }));
+          dispatch(SET({ champ: name, value: e.currentTarget.value }));
         }}
       />
       {error && (

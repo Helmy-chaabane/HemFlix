@@ -1,0 +1,24 @@
+.signup {
+  min-height: 100%;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../../Images/loginBg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 3.5rem 7rem;
+    min-width: 60rem;
+    min-height: 40rem;
+    color: white;
+    margin: 10rem 0rem 4rem 0rem;
+    animation: fade 1s;
+  }
+}

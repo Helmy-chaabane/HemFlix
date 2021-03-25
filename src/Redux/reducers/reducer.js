@@ -4,6 +4,7 @@ import navReducer from "./navbar";
 import userReducer from "./user";
 import notificationReducer from "./notifications";
 import actorsReducer from "./actors";
+import formReducer from "./form";
 
 export default combineReducers({
   data: moviesReducer,
@@ -11,4 +12,5 @@ export default combineReducers({
   user: userReducer,
   notifis: notificationReducer,
   actors: actorsReducer,
+  form: formReducer,
 });

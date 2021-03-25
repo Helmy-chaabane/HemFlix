@@ -12,6 +12,7 @@ import {
 import { ADD_NOTIFICATION } from "../../Redux/reducers/notifications";
 import { getUser } from "../../Redux/selectors/user";
 import "./login.scss";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const user = useSelector(getUser);
@@ -90,19 +91,21 @@ const Login = () => {
         </header>
         <form className="login__form" onSubmit={(e) => onSubmit(e)}>
           <InputLogin
-            placeholder="username"
+            placeholder="Username"
             type="text"
             name="username"
             disable={user.Submiting}
             error={user.usernameError}
+            SET={SET_USER}
           />
 
           <InputLogin
-            placeholder="password"
+            placeholder="Password"
             type="password"
             name="password"
             disable={user.Submiting}
             error={user.passwordError}
+            SET={SET_USER}
           />
 
           <button
@@ -114,6 +117,10 @@ const Login = () => {
             <span>Sign in</span>
           </button>
         </form>
+
+        <Link to="/signup" className="login__signup">
+          Sign Up <span className="login__signup--arrow">&rarr;</span>
+        </Link>
       </div>
     </div>
   );
