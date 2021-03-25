@@ -5,8 +5,9 @@ import Acceuil from "./Pages/Acceuil/Acceuil";
 import Movie from "./Pages/Movie/Movie";
 import MyMovies from "./Pages/MyMovies/MyMovies";
 import Actors from "./Pages/Actors/Actors";
-import "./App.css";
 import Signup from "./Pages/Signup/Signup";
+import Nicer from "./Pages/Nicer/Nicer";
+import "./App.css";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <ProtectedRoute path="/mymovies" exact component={MyMovies} />
         <ProtectedRoute path="/movie/:id" exact component={Movie} />
         <ProtectedRoute path="/actors" exact component={Actors} />
+        <ProtectedRoute path="/nicer" exact component={Nicer} />
         <Route path="/login" exact component={Login} />
         <Route path="/signup" exact component={Signup} />
       </Switch>

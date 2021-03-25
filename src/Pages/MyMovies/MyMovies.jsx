@@ -15,6 +15,7 @@ const MyMovies = () => {
   const fantasies = useSelector(getLikedMovieByGenre("fantasy"));
   const dramas = useSelector(getLikedMovieByGenre("drama"));
   const comedies = useSelector(getLikedMovieByGenre("comedy"));
+  const animes = useSelector(getLikedMovieByGenre("anime"));
 
   return (
     <div className="mymovies">
@@ -32,6 +33,7 @@ const MyMovies = () => {
           <MovieList movies={fantasies} />
           <MovieList movies={dramas} />
           <MovieList movies={animations} />
+          <MovieList movies={animes} />
         </React.Fragment>
       ) : (
         <div className="mymovies__empty">

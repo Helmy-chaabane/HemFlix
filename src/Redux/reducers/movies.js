@@ -17,6 +17,7 @@ import transformersCover from "../../Images/transformers_cover.jpg";
 import kungfuCover from "../../Images/kungfu_cover.jpg";
 import godfadherCover from "../../Images/godfadher_cover.jpg";
 import venomCover from "../../Images/venom_cover.jpg";
+import attackCover from "../../Images/attack_cover.jpg";
 import collateralImage from "../../Images/collateral_bigCover.jpg";
 import titanicImage from "../../Images/titanic_bigCover.jpg";
 import chukkyImage from "../../Images/chukky_bigCover.jpg";
@@ -35,6 +36,7 @@ import transformersImage from "../../Images/transformers_bigCover.jpg";
 import kungfuImage from "../../Images/kungfu_bigCover.jpg";
 import godfadherImage from "../../Images/godfadher_bigCover.jpg";
 import venomImage from "../../Images/venom_bigCover.jpg";
+import attackImage from "../../Images/attack_bigCover.jpg";
 
 const slice = createSlice({
   name: "data",
@@ -212,6 +214,15 @@ const slice = createSlice({
         description: `The Corleone family patriarch is Vito Corleone (The Don), whose surname (Italian for "Lionheart") recalls the town of Corleone, Sicily. His birth name is Vittorio Andolini, but after emigrating to America, he changed it to the name of his home village as one of his few acts of sentimentality. Vito fathered four children: Santino "Sonny" Corleone, Frederico "Fredo" Corleone, Michael "Mike" Corleone, and Constanzia "Connie" Corleone. He also has an informally adopted son, Thomas "Tom" Hagen, who became the Corleone Family's consigliere (counselor). Vito Corleone is also godfather to the famous singer and movie star Johnny Fontane. The godfather referred to in the title is generally taken to be Vito. However, the story's main character is Michael Corleone. The novel's central storyline details Michael's destiny to succeed his father as the head of the family empire, despite his desire to lead an Americanized life with his girlfriend (and eventual wife) Kay Adams.`,
         cover: venomCover,
         bigImage: venomImage,
+      },
+      {
+        id: 19,
+        liked: true,
+        genre: "anime",
+        title: "Attack On Titan",
+        description: `The Corleone family patriarch is Vito Corleone (The Don), whose surname (Italian for "Lionheart") recalls the town of Corleone, Sicily. His birth name is Vittorio Andolini, but after emigrating to America, he changed it to the name of his home village as one of his few acts of sentimentality. Vito fathered four children: Santino "Sonny" Corleone, Frederico "Fredo" Corleone, Michael "Mike" Corleone, and Constanzia "Connie" Corleone. He also has an informally adopted son, Thomas "Tom" Hagen, who became the Corleone Family's consigliere (counselor). Vito Corleone is also godfather to the famous singer and movie star Johnny Fontane. The godfather referred to in the title is generally taken to be Vito. However, the story's main character is Michael Corleone. The novel's central storyline details Michael's destiny to succeed his father as the head of the family empire, despite his desire to lead an Americanized life with his girlfriend (and eventual wife) Kay Adams.`,
+        cover: attackCover,
+        bigImage: attackImage,
       },
     ],
     currentGenre: "horror",

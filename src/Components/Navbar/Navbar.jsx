@@ -34,6 +34,11 @@ const Navbar = () => {
             Actors/Trailers
           </Link>
         </li>
+        <li className="nav__item">
+          <Link to="/nicer" className="nav__link">
+            Beta
+          </Link>
+        </li>
       </ul>
 
       <ul className="nav__items">

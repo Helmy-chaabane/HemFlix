@@ -34,6 +34,7 @@ const Acceuil = () => {
               <ListItem currentGenre={currentGenre} genre="animation" />
               <ListItem currentGenre={currentGenre} genre="fantasy" />
               <ListItem currentGenre={currentGenre} genre="comedy" />
+              <ListItem currentGenre={currentGenre} genre="anime" />
             </ul>
           </div>
           <div className="acceuil__movies--lists">
