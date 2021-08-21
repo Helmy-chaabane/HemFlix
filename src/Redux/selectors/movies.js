@@ -27,3 +27,8 @@ export const getLikedMovieByGenre = (genre) =>
     (state) => state.data.movies,
     (movies) => movies.filter((movie) => movie.liked && movie.genre === genre)
   );
+
+export const getAllMovies = createSelector(
+  (state) => state.data.movies,
+  (movies) => movies
+);

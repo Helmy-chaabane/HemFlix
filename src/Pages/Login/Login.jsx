@@ -13,6 +13,7 @@ import { ADD_NOTIFICATION } from "../../Redux/reducers/notifications";
 import { getUser } from "../../Redux/selectors/user";
 import "./login.scss";
 import { Link } from "react-router-dom";
+import { getPosts } from "../../Redux/api/posts";
 
 const Login = () => {
   const user = useSelector(getUser);
@@ -78,6 +79,7 @@ const Login = () => {
 
   useEffect(() => {
     dispatch(INITIAL_USER({}));
+    dispatch(getPosts());
   }, [dispatch]);
 
   return (

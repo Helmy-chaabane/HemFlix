@@ -7,6 +7,7 @@ import MyMovies from "./Pages/MyMovies/MyMovies";
 import Actors from "./Pages/Actors/Actors";
 import Signup from "./Pages/Signup/Signup";
 import Nicer from "./Pages/Nicer/Nicer";
+import Select from "./Pages/Select/Select";
 import "./App.css";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <ProtectedRoute path="/nicer" exact component={Nicer} />
         <Route path="/login" exact component={Login} />
         <Route path="/signup" exact component={Signup} />
+        <Route path="/select" exact component={Select} />
       </Switch>
     </div>
   );

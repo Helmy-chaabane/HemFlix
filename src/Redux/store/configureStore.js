@@ -5,5 +5,4 @@ import reducer from "../reducers/reducer";
 export default () =>
   configureStore({
     reducer,
-    middleware: [...getDefaultMiddleware({ serializableCheck: false })],
   });
