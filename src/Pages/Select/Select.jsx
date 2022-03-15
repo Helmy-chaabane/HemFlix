@@ -1,25 +1,42 @@
-import "./select.scss";
+import { useState } from "react";
+import SelectC from "./SelectComp";
 
-import React, { useState } from "react";
-import RightArrow from "../../SVG/RightArrow";
+const options = [
+  {
+    option: "Item1",
+    value: {
+      name: "Helmy1",
+      age: 20,
+    },
+  },
+  {
+    option: "Item2",
+    value: {
+      name: "Helmy2",
+      age: 30,
+    },
+  },
+  {
+    option: "Item3",
+    value: {
+      name: "Helmy3",
+      age: 30,
+    },
+  },
+];
 
 const Select = () => {
-  const [state, setState] = useState("Choose from the Menu");
-
+  const [choosen, setChoosen] = useState({
+    name: "Helmy2",
+    age: 30,
+  });
   return (
     <div className="container">
-      <div className="select">
-        <span className="select__selected">{state}</span>
-        <RightArrow classname="select__icon" />
-        <ul className="select__list">
-          <li className="select__option" onClick={() => setState("Option1")}>
-            Option1
-          </li>
-          <li className="select__option" onClick={() => setState("Option2")}>
-            Option2
-          </li>
-        </ul>
-      </div>
+      <SelectC
+        options={options}
+        defaultValue={choosen}
+        handleSelect={setChoosen}
+      />
     </div>
   );
 };
