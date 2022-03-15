@@ -15,4 +15,4 @@ jobs:
       - name: End to End testing
         uses: DevExpress/testcafe-action@latest
         with:
-          args: "chrome:headless src/tests/"
+          args: '--app "npm start" chrome:headless src/tests/'
