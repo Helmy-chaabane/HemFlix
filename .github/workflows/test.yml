@@ -11,7 +11,7 @@ jobs:
         with:
           node-version: 16.x
       - name: Install dependencies
-        run: npm install
+        run: npm ci
       - name: End to End testing
         uses: DevExpress/testcafe-action@latest
         with:
