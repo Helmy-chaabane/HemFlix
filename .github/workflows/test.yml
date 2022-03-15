@@ -13,7 +13,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: End to End testing
-        run: npm start
         uses: DevExpress/testcafe-action@latest
         with:
           args: "chrome:headless src/tests/"

@@ -1,4 +1,5 @@
 import { ReactSelector, waitForReact } from "testcafe-react-selectors";
+const json = require("../data/data.json");
 
 fixture`Login tests`
   .page("http://localhost:3000/login")
