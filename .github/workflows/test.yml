@@ -1,6 +1,6 @@
 name: test
 
-on: pull_request
+on: push
 
 jobs:
   Test:
@@ -12,7 +12,9 @@ jobs:
           node-version: 16.x
       - name: Install dependencies
         run: npm install
+      - name: Run project
+        run: npm start
       - name: End to End testing
         uses: DevExpress/testcafe-action@latest
         with:
-          args: 'chrome:headless src/tests/'
+          args: "chrome:headless src/tests/"
