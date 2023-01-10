@@ -48,6 +48,6 @@
   },
   "devDependencies": {
     "eslint-plugin-testcafe": "^0.2.1",
-    "testcafe": "^1.18.4"
+    "testcafe": "^15.1.317922"
   }
 }
