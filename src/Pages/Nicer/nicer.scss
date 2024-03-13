@@ -4,7 +4,6 @@
   position: relative;
   &__ctn {
     display: flex;
-    justify-content: center;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -14,7 +13,6 @@
   &__container {
     flex: 0 0 30%;
     height: 50rem;
-    //overflow: hidden;
     box-shadow: 1px 0px 2rem 1px rgba($color: white, $alpha: 0.2);
     perspective: 1000px;
     backface-visibility: none;
