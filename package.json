@@ -13,7 +13,7 @@
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "5.0.1",
     "reselect": "^4.0.0",
     "testcafe-react-selectors": "^4.1.5",
     "web-vitals": "^1.1.0"
