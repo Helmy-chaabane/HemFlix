@@ -14,7 +14,7 @@ const SelectC = ({ options, handleSelect, defaultValue }) => {
       setIndex(ind !== -1 ? ind : null);
       handleSelect(options[ind].value);
     }
-  }, []);
+  }, [defaultValue, handleSelect, options]);
 
   return (
     <div className="select__wrapper">

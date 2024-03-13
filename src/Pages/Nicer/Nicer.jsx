@@ -112,7 +112,7 @@ const Nicer = () => {
         </div>
       </div>
 
-      <div className="volume">
+      {/* <div className="volume">
         <div className="volume__container">
           <div className="volume__bar volume__bar--1"></div>
           <div className="volume__bar volume__bar--4"></div>
@@ -120,7 +120,7 @@ const Nicer = () => {
           <div className="volume__bar volume__bar--2"></div>
           <div className="volume__bar volume__bar--3"></div>
         </div>
-      </div>
+        </div>*/}
 
       {/* <div className="percent">
         <div className="percent__container"></div>
